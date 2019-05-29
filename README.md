@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 func ordenarMariz(){
+
  	var mat[12]int
+	
     for f :=0 ; f < 12;f++ {
 
             fmt.Print("Ingrese numero:")
@@ -12,9 +14,13 @@ func ordenarMariz(){
     
     
     fmt.Println("Impresión de la matriz completa")
+    
     fmt.Println(mat)
+    
     fmt.Println("Impresión elemento a elemento")
+    
     for f := 0; f < 12;f++ {
+    
             fmt.Print(mat[f], " ")
         }
 	
