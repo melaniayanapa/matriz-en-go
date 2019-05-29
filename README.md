@@ -9,12 +9,16 @@ func ordenarMariz(){
             fmt.Scan(&mat[f])
 
     }
+    
+    
     fmt.Println("Impresión de la matriz completa")
     fmt.Println(mat)
     fmt.Println("Impresión elemento a elemento")
     for f := 0; f < 12;f++ {
             fmt.Print(mat[f], " ")
         }
+	
+	
 
 tmp := 0
     for x := 0; x < 12; x++ {
@@ -26,12 +30,16 @@ tmp := 0
             }
         }
     }
+    
+    
     fmt.Print("\nArray ordenado: ")
     for i := 0; i < 12; i++ {
         fmt.Print("[",mat[i],"]")
     }
     fmt.Println()
 }
+
+
     func rutinas(matriz[]int) {
     	tam := len(matriz)/4
     	go mat(matriz[:tam])
