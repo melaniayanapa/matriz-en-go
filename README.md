@@ -28,10 +28,15 @@ func ordenarMariz(){
 
 tmp := 0
     for x := 0; x < 12; x++ {
+    
         for y := 0; y < 12; y++ {
+	
             if mat[x] < mat[y] {
+	    
                 tmp = mat[x]
+		
                 mat[x] = mat[y]
+		
                 mat[y] = tmp
             }
         }
@@ -39,7 +44,9 @@ tmp := 0
     
     
     fmt.Print("\nArray ordenado: ")
+    
     for i := 0; i < 12; i++ {
+    
         fmt.Print("[",mat[i],"]")
     }
     fmt.Println()
@@ -47,11 +54,17 @@ tmp := 0
 
 
     func rutinas(matriz[]int) {
+    
     	tam := len(matriz)/4
+	
     	go mat(matriz[:tam])
+	
     	go mat(matriz[tam:tam*2])
+	
     	go mat(matriz[tam*2:tam*3])
+	
     	go mat(matriz[tam*3:])
+	
     	mat(matriz)
 
     }
@@ -60,7 +73,9 @@ tmp := 0
 
 func main() {
 		ordenarMariz()
+		
     rutinas(slice)
+    
     temp.Wait()
 
 
